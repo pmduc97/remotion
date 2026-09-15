@@ -7,3 +7,5 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Primary Reference
 
 Please see [AGENTS.md](AGENTS.md) in this same directory for the main project documentation and guidance.
+
+Nếu tồn tại `.claude/PRIVATE.md`, đọc thêm file đó.
