@@ -82,6 +82,7 @@ packages/example/src/shopee/
 scripts/dashboard-kebenghe/
 scripts/dashboard-shopee/
 scripts/dashboard-common.ts
+scripts/git-private.ps1
 scripts/build-terminal-html.ts
 scripts/sync-drive.ts
 scripts/drive-assets.ts
