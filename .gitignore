@@ -55,10 +55,14 @@ packages/skills-evals/.playground
 .agent/bridge.pid
 .agent/bridge.out.log
 .agent/bridge.err.log
+.agent/_tmp_objective.txt
 
 # LAN Dashboard Terminal (ttyd)
 scripts/bin/
 scripts/terminal.html
+
+# Ad-hoc scratch scripts, not source
+/scratch/
 
 # Python bytecode cache (scripts/, not just packages/lambda-python/)
 __pycache__/
@@ -106,8 +110,10 @@ packages/example/public/be-biet-giu-loi-hua/
 packages/example/public/be-biet-xep-hang/
 packages/example/public/be-cham-danh-rang/
 packages/example/public/be-khong-di-theo-nguoi-la/
+packages/example/public/be-rua-tay-sach/
 packages/example/public/be-vui-don-trung-thu/
 packages/example/public/cao-va-chum-nho/
+packages/example/public/cau-chuyen-bo-dua/
 packages/example/public/cau-be-tich-chu/
 packages/example/public/cay-tre-tram-dot/
 packages/example/public/chi-hang-nga-va-tho-ngoc/
@@ -126,6 +132,7 @@ packages/example/public/su-tich-cay-vu-sua/
 packages/example/public/su-tich-chu-cuoi/
 packages/example/public/su-tich-den-ong-sao/
 packages/example/public/su-tich-ho-guom/
+packages/example/public/su-tich-hoa-cuc-trang/
 packages/example/public/su-tich-qua-dua-hau/
 packages/example/public/su-tu-va-chuot-nhat/
 packages/example/public/thach-sanh/
