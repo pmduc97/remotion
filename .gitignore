@@ -57,6 +57,17 @@ packages/skills-evals/.playground
 .agent/bridge.err.log
 .agent/_tmp_objective.txt
 
+# .agent-oc/ Architect<->Executor bridge (agy -> opencode) — runtime state, not source
+.agent-oc/config.json
+.agent-oc/state
+.agent-oc/TASK.md
+.agent-oc/RESULT.json
+.agent-oc/logs/
+.agent-oc/archive/
+.agent-oc/bridge.pid
+.agent-oc/bridge.out.log
+.agent-oc/bridge.err.log
+
 # LAN Dashboard Terminal (ttyd)
 scripts/bin/
 scripts/terminal.html
@@ -83,6 +94,12 @@ packages/example/src/shopee/
 .agent/config.example.json
 .agent/mock_executor.py
 .agent/templates/
+.agent-oc/README.md
+.agent-oc/bridge.py
+.agent-oc/mock_executor.py
+.agent-oc/agy-helpers.ps1
+.agent-oc/config.example.json
+.agent-oc/templates/
 scripts/dashboard-kebenghe/
 scripts/dashboard-shopee/
 scripts/dashboard-common.ts
@@ -92,7 +109,13 @@ scripts/sync-drive.ts
 scripts/drive-assets.ts
 scripts/crawl_shopee.py
 scripts/kebenghe_isolate_asset.py
+scripts/kebenghe_gen_asset.py
+scripts/kebenghe_check_composition.py
+scripts/render_smoke_safe.py
+scripts/render_video_safe.py
+scripts/batch/
 scripts/terminal-init.ps1
+packages/example/render_smoke.js
 start-kebenghe-dashboard.bat
 start-shopee-dashboard.bat
 GEMINI.md
@@ -104,6 +127,7 @@ packages/example/public/ba-luoi-riu/
 packages/example/public/banh-chung-banh-giay/
 packages/example/public/be-an-rau-cu/
 packages/example/public/be-an-toan-qua-duong/
+packages/example/public/be-bo-rac-dung-noi/
 packages/example/public/be-biet-cam-on-xin-loi/
 packages/example/public/be-biet-chia-se-do-choi/
 packages/example/public/be-biet-giu-loi-hua/
@@ -152,9 +176,30 @@ packages/example/public/cau-be-chan-cuu-va-soi/
 packages/example/public/be-bao-ve-doi-mat/
 packages/example/public/be-biet-chao-hoi/
 packages/example/public/con-cong-va-con-qua/
+packages/example/public/be-uong-du-nuoc/
 packages/example/public/su-tich-vinh-ha-long/
+packages/example/public/chu-lua-va-ganh-muoi/
+packages/example/public/su-tich-ho-ba-be/
+packages/example/public/be-biet-nhan-loi/
+packages/example/public/chim-se-va-hat-lua/
+packages/example/public/ngay-ong-cong-ong-tao/
+packages/example/public/be-tap-the-duc-buoi-sang/
+packages/example/public/bo-cau-va-kien/
 packages/example/public/shopee-audio/
 packages/example/public/shopee-long-den-lan/
 packages/example/public/shopee-long-den-lan-so-sanh/
 packages/example/public/shopee-long-den-lan-unboxing/
+packages/example/public/be-an-sang-day-du/
+packages/example/public/cho-va-cai-bong-duoi-nuoc/
+packages/example/public/deo-nhac-cho-meo/
+packages/example/public/su-tich-con-trau/
+packages/example/public/su-tich-hoa-dao/
+packages/example/public/su-tich-hoa-mai-vang/
 PRIVATE-REPO-SPLIT-PLAN.md
+KEBENGHE-WORKFLOW.md
+workflow-illustrations/
+cau-chuyen-bo-dua-assets.json
+.env.example
+
+# Local tool state, not project content
+.commandcode/
