@@ -100,6 +100,7 @@ packages/example/src/shopee/
 .agent-oc/agy-helpers.ps1
 .agent-oc/config.example.json
 .agent-oc/templates/
+.agent-oc/
 scripts/dashboard-kebenghe/
 scripts/dashboard-shopee/
 scripts/dashboard-common.ts
@@ -178,6 +179,7 @@ packages/example/public/be-biet-chao-hoi/
 packages/example/public/con-cong-va-con-qua/
 packages/example/public/be-uong-du-nuoc/
 packages/example/public/su-tich-vinh-ha-long/
+packages/example/public/su-tich-chu-teu-va-roi-nuoc/
 packages/example/public/chu-lua-va-ganh-muoi/
 packages/example/public/su-tich-ho-ba-be/
 packages/example/public/be-biet-nhan-loi/
@@ -195,6 +197,16 @@ packages/example/public/deo-nhac-cho-meo/
 packages/example/public/su-tich-con-trau/
 packages/example/public/su-tich-hoa-dao/
 packages/example/public/su-tich-hoa-mai-vang/
+packages/example/public/be-khong-noi-doi/
+packages/example/public/cao-va-co-dai-khach/
+packages/example/public/su-tich-qua-bau-me/
+packages/example/public/be-che-mieng-khi-ho/
+packages/example/public/lua-hoa-trang-su-tu/
+packages/example/public/su-tich-chiec-non-la/
+packages/example/public/be-giup-ban-bi-nga/
+packages/example/public/be-mac-am-khi-troi-lanh/
+packages/example/public/ech-muon-to-bang-bo/
+packages/example/public/chuot-nha-va-chuot-dong/
 PRIVATE-REPO-SPLIT-PLAN.md
 PLAN_IMPLEMENT_MUSIC.md
 KEBENGHE-WORKFLOW.md
