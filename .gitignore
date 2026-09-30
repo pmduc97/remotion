@@ -80,6 +80,7 @@ __pycache__/
 
 # --- Private kebenghe/shopee paths (tracked via .git-private, see PRIVATE-REPO-SPLIT-PLAN.md) ---
 /.git-private/
+vieneu-tts/
 packages/example/src/kebenghe/
 packages/example/src/shopee/
 .claude/skills/kebenghe-*/
