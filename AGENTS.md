@@ -43,3 +43,6 @@ From `packages/example`:
 - `bunx remotion compositions` — list available compositions.
 - `bunx remotion render <comp-id> --output ../../out/video.mp4` — render a video.
 - `bunx remotion still <comp-id> --output ../../out/still.png` — render a still image.
+
+## Dự án Kể Bé Nghe (KeBeNghe)
+Khi bắt đầu một session mới làm việc với Kể Bé Nghe, các agent (Claude, Gemini, OpenCode, v.v.) CẦN đọc file .agents/skills/kebenghe-readme/SKILL.md và chạy theo các hướng dẫn trong đó để nắm được bối cảnh, tiến độ roadmap và lịch đăng mới nhất.

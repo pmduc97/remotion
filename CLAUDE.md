@@ -9,3 +9,6 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 Please see [AGENTS.md](AGENTS.md) in this same directory for the main project documentation and guidance.
 
 Nếu tồn tại `.claude/PRIVATE.md`, đọc thêm file đó.
+
+## Kể Bé Nghe
+Khi bắt đầu một session mới liên quan đến dự án Kể Bé Nghe, hãy đọc file .agents/skills/kebenghe-readme/SKILL.md và thực hiện các bước trong đó để nắm bối cảnh.
