@@ -285,3 +285,5 @@ packages/example/public/ba-chu-lon-con/
 scripts/render_smoke_trong_dong.py
 scripts/resize_trong_dong_backgrounds.py
 packages/example/public/trong-dong-dong-son/
+scripts/render_smoke_be_doi_mu.ps1
+packages/example/public/be-doi-mu-khi-ra-nang/
