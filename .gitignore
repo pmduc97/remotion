@@ -287,3 +287,8 @@ scripts/resize_trong_dong_backgrounds.py
 packages/example/public/trong-dong-dong-son/
 scripts/render_smoke_be_doi_mu.ps1
 packages/example/public/be-doi-mu-khi-ra-nang/
+
+CLOUDFLARE_README.md
+start-tunnel.bat
+start_bot.bat
+stop-tunnel.bat
