@@ -82,11 +82,15 @@ __pycache__/
 /.git-private/
 vieneu-tts/
 packages/example/src/kebenghe/
+packages/example/src/hatbenghe/
 packages/example/src/shopee/
 .claude/skills/kebenghe-*/
+.claude/skills/hatbenghe-*/
 .claude/skills/shopee-*/
 .agents/skills/kebenghe/
 .agents/skills/kebenghe-*/
+.agents/skills/hatbenghe/
+.agents/skills/hatbenghe-*/
 .agents/skills/shopee/
 .agents/skills/shopee-*/
 .agent/README.md
@@ -113,6 +117,8 @@ scripts/crawl_shopee.py
 scripts/kebenghe_isolate_asset.py
 scripts/kebenghe_gen_asset.py
 scripts/kebenghe_check_composition.py
+scripts/hatbenghe_analyze_audio.py
+scripts/hatbenghe_check_clips.py
 scripts/render_smoke_safe.py
 scripts/render_video_safe.py
 scripts/batch/
@@ -122,6 +128,7 @@ start-kebenghe-dashboard.bat
 start-shopee-dashboard.bat
 GEMINI.md
 .claude/agents/kebenghe.md
+.claude/agents/hatbenghe.md
 .claude/agents/shopee.md
 .claude/PRIVATE.md
 packages/example/public/kebenghe-assets/
