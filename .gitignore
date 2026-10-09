@@ -318,3 +318,31 @@ packages/example/public/cuoc-dua-chon-12-con-giap/
 packages/example/public/hai-chu-meo-tranh-banh/
 packages/example/public/rua-muon-bay/
 packages/example/public/su-tich-than-nong/
+packages/example/public/be-an-ui-ban-buon/
+packages/example/public/be-khong-nghich-diem-bat-lua/
+packages/example/public/be-tu-don-bat/
+packages/example/public/be-tam-goi-sach-se/
+packages/example/public/be-chuan-bi-cap-sach/
+packages/example/public/be-di-dep-ra-san/
+packages/example/public/be-can-than-voi-bep/
+packages/example/public/bay-khi-va-nguoi-ban-mu/
+packages/example/public/be-cam-on-bac-lao-cong/
+packages/example/public/be-mac-ao-phao/
+packages/example/public/be-ngu-trua-deu-dan/
+packages/example/public/be-nhuong-em-nho/
+packages/example/public/be-tuoi-cay-giup-me/
+packages/example/public/cho-soi-va-chim-seu/
+packages/example/public/hai-nguoi-ban-va-con-gau/
+packages/example/public/ngong-de-trung-vang/
+packages/example/public/su-tich-ho-tay/
+packages/example/public/su-tich-thach-sung/
+
+# Music videos & audio assets (phi-cong-vit-bau)
+packages/example/public/phi-cong-vit-bau/
+test_music/
+
+
+# Scratch files
+out_lens.txt
+opencode-go-api/
+
