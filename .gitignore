@@ -110,6 +110,7 @@ scripts/dashboard-kebenghe/
 scripts/dashboard-shopee/
 scripts/dashboard-common.ts
 scripts/git-private.ps1
+scripts/git-private.sh
 scripts/build-terminal-html.ts
 scripts/sync-drive.ts
 scripts/drive-assets.ts
@@ -119,6 +120,11 @@ scripts/kebenghe_gen_asset.py
 scripts/kebenghe_check_composition.py
 scripts/hatbenghe_analyze_audio.py
 scripts/hatbenghe_check_clips.py
+scripts/hatbenghe_cues_to_data.py
+scripts/hatbenghe_make_cues.py
+scripts/hatbenghe_sync_mirrors.py
+hatbenghe_input/
+packages/example/public/hatbenghe/
 scripts/render_smoke_safe.py
 scripts/render_video_safe.py
 scripts/batch/

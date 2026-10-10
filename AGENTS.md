@@ -44,5 +44,27 @@ From `packages/example`:
 - `bunx remotion render <comp-id> --output ../../out/video.mp4` — render a video.
 - `bunx remotion still <comp-id> --output ../../out/still.png` — render a still image.
 
-## Dự án Kể Bé Nghe (KeBeNghe)
+## Dự án Kể Bé Nghe (KeBeNghe) & Quản lý Git Private
 Khi bắt đầu một session mới làm việc với Kể Bé Nghe, các agent (Claude, Gemini, OpenCode, v.v.) CẦN đọc file .agents/skills/kebenghe-readme/SKILL.md và chạy theo các hướng dẫn trong đó để nắm được bối cảnh, tiến độ roadmap và lịch đăng mới nhất.
+
+### Cơ chế 2 Repository (Public vs Private)
+Dự án vận hành theo mô hình 2 Git repository song song trong cùng một thư mục làm việc:
+- 🌐 **Public Repo (`.git`)** → Trỏ tới `git@github.com:pmduc97/remotion.git`: Quản lý mã nguồn core Remotion công khai. Sử dụng lệnh `git` thông thường.
+- 🔒 **Private Repo (`.git-private`)** → Trỏ tới `git@github.com:pmduc97/remotion_private.git`: Quản lý toàn bộ tài nguyên bản quyền (Kể Bé Nghe, Hát Bé Nghe, Shopee Affiliate, VieNeu-TTS, các scripts quản trị...). Các thư mục này đều bị `.gitignore` của Public repo bỏ qua để tránh rò rỉ dữ liệu lên mạng.
+
+### Sử dụng lệnh `git-private`:
+- **Trên Linux:** Đã có công cụ 1-chạm `git-private` trong PATH (symlink `/home/pmduc97/.local/bin/git-private` → `scripts/git-private.sh`).
+- **Trên Windows:** Dùng script `.\scripts\git-private.ps1` hoặc `git --git-dir=.git-private --work-tree=.`.
+- **Quy trình thao tác:**
+  ```bash
+  # 1. Kiểm tra các file private đã thay đổi hoặc mới tạo:
+  git-private status
+  # 2. Thêm file vào staging (chỉ định path tường minh, không dùng 'git-private add .'):
+  git-private add packages/example/src/kebenghe/
+  git-private add scripts/dashboard-kebenghe/
+  # 3. Commit:
+  git-private commit -m "feat(kebenghe): hoàn thiện truyện mới"
+  # 4. Push trực tiếp lên repo Private trên GitHub:
+  git-private push
+  ```
+- **Nguyên tắc an toàn:** Lệnh `git` thông thường dành cho repo Public Remotion, còn lệnh `git-private` dành riêng cho toàn bộ tài sản Kể Bé Nghe / Shopee / Hát Bé Nghe. Cả hai hoạt động độc lập, không được commit lẫn lộn sang nhau.
