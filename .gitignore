@@ -44,6 +44,14 @@ packages/skills-evals/.site
 packages/skills-evals/.playground
 .drive-sync.json
 /assets-inbox/
+client_secret*.json
+token.json
+scripts/youtube-upload/
+scripts/facebook-upload/
+scripts/tiktok-upload/
+scripts/agy-image-service/
+scripts/telegram_notify.py
+
 
 # .agent/ Architect<->Executor bridge — runtime state, not source
 .agent/config.json
@@ -93,6 +101,10 @@ packages/example/src/shopee/
 .agents/skills/hatbenghe-*/
 .agents/skills/shopee/
 .agents/skills/shopee-*/
+.agents/skills/coverbaihat/
+.agents/skills/coverbaihat-*/
+.agents/skills/reviewphim/
+.agents/skills/reviewphim-*/
 .agent/README.md
 .agent/bridge.py
 .agent/claude-helpers.ps1
@@ -132,6 +144,8 @@ scripts/terminal-init.ps1
 packages/example/render_smoke.js
 start-kebenghe-dashboard.bat
 start-shopee-dashboard.bat
+start-tts-server.bat
+start-tts-server.sh
 GEMINI.md
 .claude/agents/kebenghe.md
 .claude/agents/hatbenghe.md
@@ -360,3 +374,25 @@ test_music/
 out_lens.txt
 opencode-go-api/
 
+
+# Audio Pipeline venv & heavy weights
+.venv-audio/
+assets-inbox/audio_models/
+coverbaihat_input/
+packages/example/src/coverbaihat/
+packages/example/public/coverbaihat-*/
+packages/example/public/coverbaihat/
+scripts/coverbaihat/
+scripts/coverbaihat_*.py
+Readme_coverbaihat.md
+README_coverbaihat.md
+
+# --- Private reviewphim/ (tracked via .git-private) ---
+readme_reviewphim.md
+Readme_reviewphim.md
+README_reviewphim.md
+reviewphim_input/
+packages/example/src/reviewphim/
+packages/example/public/reviewphim-*/
+packages/example/public/reviewphim/
+scripts/reviewphim/
