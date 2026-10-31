@@ -48,6 +48,7 @@ client_secret*.json
 token.json
 scripts/youtube-upload/
 scripts/facebook-upload/
+scripts/facebook-upload-reviewphim/
 scripts/tiktok-upload/
 scripts/agy-image-service/
 scripts/telegram_notify.py
@@ -264,6 +265,7 @@ packages/example/public/cau-be-thong-minh/
 PRIVATE-REPO-SPLIT-PLAN.md
 PLAN_IMPLEMENT_MUSIC.md
 PLAN_AGENT_HATBENGHE.md
+PLAN_N8N_REVIEWPHIM.md
 KEBENGHE-WORKFLOW.md
 workflow-illustrations/
 cau-chuyen-bo-dua-assets.json
@@ -387,6 +389,12 @@ scripts/coverbaihat_*.py
 Readme_coverbaihat.md
 README_coverbaihat.md
 
+# --- n8n Review Phim bot runtime (chat history, prefs, plans, lock) ---
+.n8n-reviewphim/
+.reviewphim-n8n.lock
+reviewphim_input/_cache/cookies.txt
+**/cookies.txt
+
 # --- Private reviewphim/ (tracked via .git-private) ---
 readme_reviewphim.md
 Readme_reviewphim.md
@@ -402,6 +410,7 @@ scripts/reviewphim/
 scripts/check_clock_angles.py
 scripts/import_opencode_logs_to_9router.py
 scripts/kebenghe_make_thumbs.py
+scripts/make_thumbnail_16x9.py
 scripts/kebenghe_register.py
 scripts/setup_batches_be_di_cau_thang.py
 scripts/setup_batches_chiec_ao.py
@@ -431,3 +440,18 @@ packages/example/public/o-an-quan/
 packages/example/public/ong-trang-tha-dieu/
 packages/example/public/ron-ran-len-may/
 packages/example/public/tranh-dong-ho/
+
+# --- Kể Bé Nghe / Hát Bé Nghe: manifest + phụ kiện thuộc repo PRIVATE -----
+# Mọi thư mục truyện dưới public/ đều là tài nguyên kênh (lời kể, manifest TTS).
+# Chỉ chặn manifest/phụ kiện; audio .wav đã bị chặn bởi public/.gitignore của repo private.
+packages/example/public/*/manifest.json
+packages/example/public/.gitignore
+packages/example/public/tiktok-reviewphim-qr.png
+
+# --- Agent/channel configs thuộc repo PRIVATE -----------------------------
+.claude/agents/coverbaihat.md
+.claude/skills/coverbaihat/
+.opencode/agents/
+
+# --- Review Phim bot (private) -------------------------------------------
+scripts/tiktok-upload-reviewphim/

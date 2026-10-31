@@ -47,6 +47,16 @@ From `packages/example`:
 ## Dự án Kể Bé Nghe (KeBeNghe) & Quản lý Git Private
 Khi bắt đầu một session mới làm việc với Kể Bé Nghe, các agent (Claude, Gemini, OpenCode, v.v.) CẦN đọc file .agents/skills/kebenghe-readme/SKILL.md và chạy theo các hướng dẫn trong đó để nắm được bối cảnh, tiến độ roadmap và lịch đăng mới nhất.
 
+### Quy trình — KHÔNG còn bước sync-drive (chốt 2026-10-30)
+Dây chuyền Kể Bé Nghe dừng ở `kebenghe-review-final`; **bỏ hẳn bước `kebenghe-sync-drive`** (Hát Bé Nghe cũng vậy). Không chạy `bun run sync-drive <slug>`, không ghi bước này vào plan/agent/skill mới. Bàn giao tại chỗ: `out/<slug>/video.mp4`, `out/<slug>/thumbnail.png`, `out/<slug>/DANG-BAI.md`. Ngoại lệ duy nhất: `bun run sync-drive --pull` trong `hatbenghe-check-clips` (lấy tài nguyên người dùng đưa lên).
+
+### Sinh ảnh 3D — quy tắc 2026-10-29
+- Mọi call qua service `http://127.0.0.1:3459/v1`; **cấm gọi thẳng `api.vilao.ai`** (mất ledger, breaker, idempotency).
+- Chain: tạo mới = `grok` (40đ); edit = `veo` (85đ, timeout 240s) → dừng. `agy`/`reli`/`nine`/`sunburst` tắt mặc định.
+- Bật/tắt trong `assets-inbox/image_models.json` (hot-reload, không cần restart). 503 `failed to resolve provider` → breaker nghỉ 30 phút; `gen_asset.py` dừng batch, không đổi model.
+- `gpt-image-2.5-sunburst` là token-priced ~300–400đ/ảnh, chỉ opt-in tối đa 2 ảnh/truyện.
+- Sổ chi: `assets-inbox/image_calls.jsonl` (mọi attempt, kể cả fail).
+
 ### Đọc ảnh để review — LUÔN downscale trước, TUYỆT ĐỐI không Read PNG gốc
 Ảnh smoke/review là PNG 1080×1920; mỗi lần Read tool nạp một part base64 ~4MB vào context (đo thật 2026-10-16: subagent đọc 30–56 ảnh/session làm context phình tới 20M+ token/request, cache gần như không tái dùng, compaction không theo kịp → đốt input khổng lồ). Vì vậy, với MỌI kênh (Kể Bé Nghe, Hát Bé Nghe, Cover Bài Hát, Shopee, **Review Phim**):
 
