@@ -91,6 +91,11 @@ __pycache__/
 /.git-private/
 vieneu-tts/
 packages/example/src/kebenghe/
+packages/example/src/tet-ve-nha/
+packages/example/src/Kebenghe2DRig/
+packages/example/src/KebenghePocThree/
+packages/example/src/KebengheSceneBa/
+packages/example/src/KebengheSceneBaV2/
 packages/example/src/hatbenghe/
 packages/example/src/shopee/
 .claude/skills/kebenghe-*/
@@ -153,6 +158,7 @@ GEMINI.md
 .claude/agents/shopee.md
 .claude/PRIVATE.md
 packages/example/public/kebenghe-assets/
+packages/example/public/tet-ve-nha/
 packages/example/public/ba-luoi-riu/
 packages/example/public/banh-chung-banh-giay/
 packages/example/public/be-an-rau-cu/
